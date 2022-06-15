@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<div class="calculator">
+		<div class="answerBar" type="text" value="0" id="ash">
+			0
+		</div>
+	
+<! Grid for buttons >
+		<div class="grid-template-columns">
+			
+				<button class="grid-item" id="seven" type="text">7</button>
+				<button class="grid-item" id="eight">8</button>
+				<button class="grid-item" id="nine">9</button>
+				<button class="grid-item" id="multiply">x</button>
+			
+			
+				<button class="grid-item" id="four">4</button>
+				<button class="grid-item" id="five">5</button>
+				<button class="grid-item" id="six">6</button>
+				<button class="grid-item" id="minus">-</button>
+			
+				<button class="grid-item" id="one">1</button>
+				<button class="grid-item" id="two">2</button>
+				<button class="grid-item" id="three">3</button>
+				<button class="grid-item" id="plus">+</button>
+			
+				<button class="grid-item" id="clear">C</button>
+				<button class="grid-item" id="zero">0</button>
+				<button class="grid-item" id="decimal">.</button>
+				<button class="grid-item" id="equals" value="=">=</button>
+			
+		</div>
+		
+	</div>
+
+	<script src="main.js"></script>
+<! call jQuery >
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+<! loads page before trying to call any js >
+	<script>
+	$(document).ready(function(){
+	  $("button").click(function(){
+		$("p").hide();
+	  });
+	});
+	</script>
+
+		
+</body>
+</html>
